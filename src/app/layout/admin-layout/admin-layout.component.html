@@ -4,7 +4,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" routerLink="/dashbord">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" >
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
@@ -16,9 +16,10 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" routerLink="/admin/dashbord">
+            <button class="nav-link" style="background-color: transparent; border: transparent;" (click)="getClickedButton('dashboard')" >
                 <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Dashboard</span></a>
+                <span>Dashboard</span>
+            </button>
         </li>
     
     <!--<div class="w3-bar-block">
@@ -32,14 +33,15 @@
 
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-            <a class="nav-link" routerLink="/admin/allcars">
+            <button class="nav-link" style="background-color: transparent; border: transparent;" (click)="getClickedButton('allcars')" >
                 <i class="fas fa-fw fa-car"></i>
-                <span>All Cars</span></a>
+                <span>All Cars</span>
+            </button>
         </li>
         <li class="nav-item">
-            <a class="nav-link" routerLink="/admin/addcar">
+            <button class="nav-link" style="background-color: transparent; border: transparent;" (click)="getClickedButton('addCar')" >
                 <i class="fas fa-fw fa-car"></i>
-                <span>Add Car</span></a>
+                <span>Add Car</span></button>
         </li>
 
 
@@ -138,6 +140,7 @@
 
             <!-- Begin Page Content -->
             <router-outlet></router-outlet>
+            
             <!-- /.container-fluid -->
 
         </div>
@@ -165,5 +168,5 @@
 </a>
 
 <!-- Logout Modal-->
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
 

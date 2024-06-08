@@ -9,8 +9,8 @@ const routes: Routes = [
   ]},
   {path:'admin',component:AdminLayoutComponent, children:[
     {path:'',loadChildren:()=>import('./views/admin/dashbord/dashbord.module').then(m=>m.DashbordModule)},
-    {path:'allcars',loadChildren:()=>import('./views/admin/allcars/allcars.module').then(m=>m.AllcarsModule)},
-    {path:'addcar',loadChildren:()=>import('./views/admin/addcars/addcars.module').then(m=>m.AddcarsModule)}
+    {path:'',loadChildren:()=>import('./views/admin/allcars/allcars.module').then(m=>m.AllcarsModule)},
+    {path:'',loadChildren:()=>import('./views/admin/addcars/addcars.module').then(m=>m.AddcarsModule)}
   ]}
 ];
 
