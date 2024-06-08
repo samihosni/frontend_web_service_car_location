@@ -15,7 +15,7 @@ import { AllcarsModule } from './views/admin/allcars/allcars.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
